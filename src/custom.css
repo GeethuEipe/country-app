@@ -1,0 +1,177 @@
+/* Login */
+.custom-padding {
+  padding-left: 12rem;
+  padding-right: 10rem;
+  font-weight: 550;
+}
+.custom-input {
+  border: 1.5px solid black;
+  border-radius: 0;
+  font-weight: 550;
+  color: black;
+  height: 50px;
+}
+.custom-button {
+  background-color: #3c3c3c;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 550;
+}
+.custom-button:hover {
+  background-color: #2b2b2b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.image {
+  margin-top: -120px;
+}
+.custom-checkbox .form-check-input {
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #000;
+  border-radius: 0;
+  background-color: #f8f8f8;
+  margin-top: 4px;
+  cursor: pointer;
+}
+.custom-checkbox .form-check-label {
+  margin-left: 10px;
+  font-weight: 550;
+  color: #333;
+}
+.custom-checkbox .form-check-input:checked {
+  background-color: #000;
+  border-color: #000;
+}
+.custom-checkbox .form-check-input:checked::before {
+  content: '\2713';
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  top: -2px;
+  left: 3px;
+}
+.text-with-borders {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.border-left,
+.border-right {
+  height: 2px;
+  flex-grow: 1;
+  background-color: rgb(188, 184, 184);
+}
+
+/* Home */
+.wrapper {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.country-card {
+  border: 1.5px solid black;
+  border-radius: 0;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.country-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+}
+
+.filter-item {
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+}
+
+.filter-item.active {
+  font-weight: bold;
+  border-bottom: 1.5px solid #333;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
+
+/* Media queries for responsive design on Login page * */
+@media (max-width: 1200px) {
+  .custom-padding {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-padding {
+    padding: 60px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-padding {
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-padding {
+    padding: 80px 30px;
+  }
+}
+
+/* Media queries for responsive design on Home page */
+@media (max-width: 1200px) {
+  .wrapper {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .country-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .filter-item {
+    font-size: 14px;
+  }
+}
